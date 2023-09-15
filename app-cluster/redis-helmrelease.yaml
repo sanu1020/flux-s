@@ -1,0 +1,91 @@
+typemeta:
+  kind: HelmRelease
+  apiversion: helm.toolkit.fluxcd.io/v2beta1
+objectmeta:
+  name: bitnami
+  generatename: ""
+  namespace: flux-system
+  selflink: ""
+  uid: ""
+  resourceversion: ""
+  generation: 0
+  creationtimestamp: "0001-01-01T00:00:00Z"
+  deletiontimestamp: null
+  deletiongraceperiodseconds: null
+  labels: {}
+  annotations: {}
+  ownerreferences: []
+  finalizers: []
+  managedfields: []
+spec:
+  chart:
+    objectmeta: null
+    spec:
+      chart: bitnami
+      version: redis
+      sourceref:
+        apiversion: ""
+        kind: HelmRepository
+        name: 18.0.4
+        namespace: ""
+      interval: null
+      reconcilestrategy: ""
+      valuesfiles: []
+      valuesfile: ""
+      verify: null
+  interval:
+    duration: 5m0s
+  kubeconfig: null
+  suspend: false
+  releasename: bitnami
+  targetnamespace: ""
+  storagenamespace: ""
+  dependson: []
+  timeout: null
+  maxhistory: null
+  serviceaccountname: ""
+  persistentclient: null
+  install:
+    timeout: null
+    remediation: null
+    disablewait: false
+    disablewaitforjobs: false
+    disablehooks: false
+    disableopenapivalidation: false
+    replace: false
+    skipcrds: false
+    crds: Create
+    createnamespace: false
+  upgrade:
+    timeout: null
+    remediation: null
+    disablewait: false
+    disablewaitforjobs: false
+    disablehooks: false
+    disableopenapivalidation: false
+    force: false
+    preservevalues: false
+    cleanuponfail: false
+    crds: CreateReplace
+  test: null
+  rollback: null
+  uninstall: null
+  valuesfrom: []
+  values:
+    raw:
+    - 123
+    - 125
+  postrenderers: []
+status:
+  observedgeneration: 0
+  reconcilerequeststatus:
+    lasthandledreconcileat: ""
+  conditions: []
+  lastappliedrevision: ""
+  lastattemptedrevision: ""
+  lastattemptedvalueschecksum: ""
+  lastreleaserevision: 0
+  helmchart: ""
+  failures: 0
+  installfailures: 0
+  upgradefailures: 0
